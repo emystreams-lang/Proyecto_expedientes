@@ -1,4 +1,4 @@
-# Sistema de expedientes - Mesa de partes digital
+# Sistema de expedientes - Mesa de partes digital  
 Prototipo en Python para registrar, validar, consultar, ordenar y guardar expedientes.
 
 ## Ejecución
