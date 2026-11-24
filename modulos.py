@@ -22,13 +22,13 @@ def ValidarFecha(fecha):
     partes = fecha.split("/")
     if len(partes) != 3:
         return False
-    dia, mes, anio = partes
-    if not (dia.isdigit() and mes.isdigit() and anio.isdigit()):
+    dia, mes, año = partes
+    if not (dia.isdigit() and mes.isdigit() and año.isdigit()):
         return False
-    if len(dia) != 2 or len(mes) != 2 or len(anio) != 4:
+    if len(dia) != 2 or len(mes) != 2 or len(año) != 4:
         return False
-    dia, mes, anio = int(dia), int(mes), int(anio)
-    dias_mes = [31, 29 if (anio % 4 == 0 and (anio % 100 != 0 or anio % 400 == 0)) else 28,
+    dia, mes, año = int(dia), int(mes), int(año)
+    dias_mes = [31, 29 if (año % 4 == 0 and (año % 100 != 0 or año % 400 == 0)) else 28,
                 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     return 1 <= mes <= 12 and 1 <= dia <= dias_mes[mes - 1]
 
